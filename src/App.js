@@ -1,22 +1,26 @@
-import "./App.css";
+import React, { useContext } from "react";
+import { TodoContext } from "./contexts/TodoContext";
+import TodoForm from "./components/TodoForm";
+import Container from "@material-ui/core/Container";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import "./assets/style/app.scss";
 
 function App() {
+  const { theme } = useContext(TodoContext);
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Reacta
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <div className={`app ${theme === false ? "light" : "night"}`}>
+        <Container maxWidth="md">
+          <h2 className={`title ${theme === false ? "black" : "white"}`}>
+            ToDo List
+          </h2>
+          <TodoForm />
+        </Container>
+      </div>
+      <Footer />
+    </>
   );
 }
 
