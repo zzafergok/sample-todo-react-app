@@ -8,6 +8,7 @@ const TodoContextProvider = (props) => {
   const [todos, setTodos] = useState([]);
   const [edit, setEdit] = useState(false);
   const [title, setTitle] = useState("");
+  const [theme, setTheme] = useState(false);
   const [editTitle, setEditTitle] = useState({
     id: "",
     title: "",
@@ -113,6 +114,8 @@ const TodoContextProvider = (props) => {
         title,
         setTitle,
         handleEdit,
+        theme,
+        setTheme,
       }}
     >
       {props.children}
