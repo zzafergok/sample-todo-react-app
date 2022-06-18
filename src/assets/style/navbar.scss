@@ -1,0 +1,44 @@
+.navbar {
+  width: 100%;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  border-radius: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  display: grid;
+  grid-template-columns: 11fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo title title";
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  div {
+    display: flex;
+    justify-content: center;
+
+    .image {
+      height: 70px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      @media (max-width: 325px) {
+        height: 50px;
+      }
+    }
+  }
+}
+
+.light {
+  border-bottom: 1px solid #e9ecef;
+  border-radius: 0;
+}
+
+.soft-night {
+  background-color: rgba(24, 24, 27, 0.9294117647);
+  border-bottom: 1px solid rgba(24, 24, 27, 0.9294117647);
+  border-radius: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
