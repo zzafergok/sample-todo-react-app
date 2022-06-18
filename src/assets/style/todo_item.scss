@@ -1,0 +1,57 @@
+.item {
+  .item-group {
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr 1fr;
+    align-items: center;
+    .item-title {
+      display: flex;
+      justify-content: flex-start;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .item-check {
+      text-decoration: line-through;
+    }
+
+    .item-unCheck {
+      text-decoration: none;
+    }
+
+    .edit-icon {
+      cursor: pointer;
+      fill: rgb(87, 86, 86);
+      &:hover {
+        fill: rgb(40, 40, 40);
+      }
+    }
+
+    .delete-icon {
+      cursor: pointer;
+      fill: currentColor;
+      &:hover {
+        fill: #cd0a0a;
+      }
+    }
+
+    .editTrue {
+      fill: #545e6a;
+      cursor: default;
+      &:hover {
+        fill: #545e6a;
+      }
+    }
+  }
+}
+
+.item-border {
+  border-bottom: 1px solid #c7c7c7;
+  padding-left: 1rem;
+}
+
+.item-border-radius {
+  border-bottom: 1px solid transparent;
+  padding-left: 1rem;
+}

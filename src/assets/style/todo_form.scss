@@ -1,0 +1,59 @@
+$button-primary: #1976d2;
+$border-color-soft: #5292d1;
+$border-color-hard: #14589d;
+$shadow: rgba(0, 0, 0, 0.5);
+$white-color: #f5f5f5;
+
+button {
+  background-color: $button-primary;
+}
+
+input::placeholder {
+  font-size: 13px;
+  padding-left: 5px;
+}
+
+.todo {
+  display: grid;
+  grid-template-columns: 12fr;
+  grid-template-rows: 12fr;
+
+  .todo-form {
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+    // grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: $white-color;
+    box-shadow: 0px 0px 10px $shadow;
+    transition: all 0.3s ease-in-out;
+
+    .todo-form-input {
+      width: 96%;
+      border-radius: 5px;
+      border: 1px solid #c7c7c7;
+      padding-left: 10px;
+
+      &:hover {
+        border: 1px solid $border-color-soft;
+      }
+
+      &:focus-visible {
+        outline-color: $border-color-hard;
+      }
+    }
+    .todo-form-button {
+      border: 1px solid $button-primary;
+      border-radius: 5px;
+      padding: 5px;
+      color: $white-color;
+      background-color: $button-primary;
+      cursor: pointer;
+      &:hover {
+        background-color: $button-primary;
+      }
+    }
+  }
+}

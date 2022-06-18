@@ -1,0 +1,20 @@
+$shadow: rgba(0, 0, 0, 0.25);
+$white-color: #f5f5f5;
+
+.item-list {
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  grid-gap: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: $white-color;
+  box-shadow: 0px 0px 10px $shadow;
+  transition: all 0.3s ease-in-out;
+
+  .item-list-empty {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
