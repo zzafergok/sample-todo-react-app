@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## `Not`
+
+- Kullanmış olduğum mock server paketi sadece development ortamında çalıştığı için local'inize clone'layıp daha sonra `npm instal | npm install --force` ve `npm start` dedikten sonra uygulama ayağa kalkar ve todo uygulamasını test edebilirsiniz.
+
 ## Available Scripts
 
 In the project directory, you can run:
